@@ -1,0 +1,8 @@
+{
+    "tool_name": "XOOX WP Hacker",
+    "author": "Pakistan Orakxai Anonymous",
+    "timeout": 10,
+    "verify_ssl": true,
+    "user_agent": "XOOX-WP-Hacker/1.0",
+    "authorized_testing_only": true
+}
