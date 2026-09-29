@@ -22,7 +22,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/XOOX-WP-Hacker.git
+git clone (https://github.com/iamxoox10/XOOX-WP-Hacker/tree/main)
 cd XOOX-WP-Hacker
 
 Install Python dependencies:
