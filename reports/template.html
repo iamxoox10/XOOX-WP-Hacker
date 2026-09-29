@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XOOX WP Hacker Report</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #0b0b0b;
+        color: #eeeeee;
+        margin: 0;
+        padding: 30px;
+    }
+    .container {
+        max-width: 1000px;
+        margin: auto;
+    }
+    .header {
+        border: 1px solid #333;
+        padding: 25px;
+        margin-bottom: 25px;
+        background: #111;
+    }
+    h1 {
+        margin: 0;
+    }
+    h2 {
+        border-bottom: 1px solid #333;
+        padding-bottom: 8px;
+    }
+    .brand {
+        margin-top: 8px;
+        color: #aaa;
+    }
+    .url {
+        word-break: break-all;
+    }
+    li {
+        margin: 8px 0;
+    }
+    .footer {
+        margin-top: 40px;
+        padding-top: 15px;
+        border-top: 1px solid #333;
+        color: #888;
+        font-size: 13px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+    <h1>XOOX WP Hacker</h1>
+    <div class="brand">
+        Made by Pakistan Orakxai Anonymous
+    </div>
+    <div class="brand">
+        WordPress Security Assessment Toolkit
+    </div>
+</div>
+<p>
+    <strong>Site URL:</strong>
+    <span class="url">{{ site_url }}</span>
+</p>
+<h2>Vulnerabilities Found</h2>
+<ul>
+    {% for vulnerability in vulnerabilities %}
+        <li>{{ vulnerability }}</li>
+    {% endfor %}
+</ul>
+<h2>Potential Issues</h2>
+<ul>
+    {% for issue in potential_issues %}
+        <li>{{ issue }}</li>
+    {% endfor %}
+</ul>
+<div class="footer">
+    XOOX WP Hacker — Authorized security assessment and educational use only.
+</div>
+</div>
+</body>
+</html>
