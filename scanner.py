@@ -13,7 +13,6 @@ def generate_report(data):
     return data
 
 def save_report(report_data):
-    # Save the report to a file
     with open("reports/report.html", "w") as file:
         file.write(report_data)
 
